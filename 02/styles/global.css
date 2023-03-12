@@ -4,9 +4,19 @@
     box-sizing: border-box;
 }
 
+body {
+    display: grid;
+    grid-template-areas: 
+    "a-top"
+    "b-contents"
+    "c-bottoms";
+
+}
+
 .a, .b, .c {
     border: 3px solid transparent;
     min-height: 50px;
+    height: 50vh;
 
     display: flex;
     justify-content: center;
@@ -14,13 +24,31 @@
 }
 
 .a {
-    border-color: #ffffba
+    border-color: #ffffba;
+    grid-area: a-top;
+    
 }
 
 .b {
     border-color: #ffdfba;
+    grid-area: b-contents;
 }
 
 .c {
     border-color: #baffc9;
+    grid-area: c-bottoms;
+}
+
+@media screen and (min-width: 600px)
+ {body{
+   grid-template-areas: 
+   "a-top a-top"
+   " c-bottoms b-contents";
+   grid-template-columns: minmax(auto, 600px) minmax(auto, 600px);
+
+   justify-content: center;
+
+}
+
+
 }
