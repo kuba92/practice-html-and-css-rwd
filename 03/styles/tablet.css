@@ -1,0 +1,10 @@
+body{
+    display: grid;
+
+    grid-template-areas: 
+    "p-area t-area"
+    "v-area t-area";
+
+    grid-template-columns: calc(200px, 50vw) auto;
+
+}

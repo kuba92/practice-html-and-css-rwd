@@ -21,20 +21,22 @@ body {
 
 .p {
     border-color: #ffffba;
+    grid-area: p-area;
 
-    width: 100%;
+    line-height: 0;
 
 }
 
 .t {
     border-color: #ffdfba;
-
-    width: 100%;
+    grid-area: t-area;
 
 }
 
 .v {
     border-color: #baffc9;
+    grid-area: v-area;
+
     position: relative;
     height: 0;
     padding-bottom: calc(100% * 315/560);

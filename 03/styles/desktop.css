@@ -1,0 +1,10 @@
+body{
+    display: grid;
+
+    grid-template-areas: 
+    "p-area v-area"
+    "t-area t-area";
+
+    max-width:  1400px;
+    margin: 0 auto;
+}
